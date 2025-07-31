@@ -1,12 +1,38 @@
-# React + Vite
+# PrepPulse – Smart Study Resource Organizer 🧠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**PrepPulse** is a personal academic dashboard designed to help students organize study materials, track goals, and collaborate with peers in a gamified environment. It's a one-stop solution to streamline your learning process and stay motivated.
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [PrepPulse](https://prep-pulse.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📚 **Resource Organizer**:  
+  Collect and categorize links to notes, YouTube videos, articles, and online courses. Features tag-based filtering and search for easy access.
+
+- 🎯 **Goal & Task Tracker**:  
+  Set weekly study goals and visually track your progress with circular progress bars.
+
+- 🔐 **Secure Authentication**:  
+  User-specific dashboards with secure Email/Password and Google authentication via Firebase.
+
+- 🧑‍🤝‍🧑 **Collaborative Study Groups**:  
+  Create or join public/private study groups. Share resources and notes on a common board.
+
+- 🌱 **Gamified Learning**:  
+  Stay motivated with a daily streak counter and an XP (Experience Points) system. Earn points for completing tasks and build a consistent study habit.
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework**: React (with Vite)  
+- **Styling**: Tailwind CSS  
+- **Routing**: React Router  
+- **State Management**: React Context API  
+- **Visualizations**: [`react-circular-progressbar`](https://www.npmjs.com/package/react-circular-progressbar)
+
+### Backend (BaaS)
+- **Service**: Firebase  
+  - **Authentication**: For user sign-up and login  
+  - **Firestore**: NoSQL database for storing resources, goals, and user data  
+  - **Hosting**: Deployed via Netlify with CI/CD
